@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Review Roaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="top-nav">
+      <a href="#profile" id="profile-link">Profile</a>
+    </nav>
+    <main>
+      <section id="code-submission">
+          <h1>Submit Your Code</h1>
+          <form id="codeForm">
+              <textarea id="codeInput" placeholder="Paste your code here or upload a screenshot below"></textarea>
+              <label for="screenshotInput">Upload Screenshot:</label>
+              <input type="file" id="screenshotInput" accept="image/*">
+              <select id="languageSelect">
+                  <option value="javascript">JavaScript</option>
+                  <option value="python">Python</option>
+                  <option value="java">Java</option>
+                  <!-- Add more options as needed -->
+              </select>
+              <button type="submit">Analyze Code</button>
+          </form>
+      </section>
+      <section id="ai-response">
+          <h2>AI Response</h2>
+          <div id="responseContent">
+              <!-- AI responses will be displayed here -->
+          </div>
+      </section>
+
+    </main>
+</body>
+</html>
